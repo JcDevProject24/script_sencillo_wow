@@ -7,7 +7,7 @@ import win32process
 # contiene constantes de Windows, como SW_RESTORE que sirve para restaurar una ventana minimizada.
 import win32con
 
-PID_PROCESO = 23880  # Modificar con el PID correcto
+PID_PROCESO = 12428  # Modificar con el PID correcto
 
 
 # HWND significa “handle to a window” → básicamente, es un número único que Windows usa para referirse a cada ventana abierta.

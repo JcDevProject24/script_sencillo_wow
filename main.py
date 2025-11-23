@@ -44,12 +44,14 @@ def macro():
         print("No se pudo activar proceso.")
         return
 
-    print("Macro iniciada. Pulsará '8' cada 10 minutos.")
+    print("Macro iniciada. Tienes 5s.")
+    esperar_interruptible(5,5)
     print("Pulsa '.' para detener.")
 
     while not stop_flag:
         # Activar ventana antes de pulsar
         activar_ventana_proceso()
+        
 
         # PULSAR EL BOTÓN 8 (duración random de 0.05–0.15s)
         mantener_tecla("8", 0.05, 0.15)
@@ -57,7 +59,7 @@ def macro():
         print("8 pulsado. Esperando 10 minutos...")
 
         # Esperar 10 minutos (600 segundos) con interrupción
-        esperar_interruptible(5, 5)
+        esperar_interruptible(601, 604)
 
     print("Macro detenida.")
 
